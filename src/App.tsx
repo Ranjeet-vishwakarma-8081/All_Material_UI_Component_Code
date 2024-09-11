@@ -1,8 +1,9 @@
 import React from "react";
+import { colors, createTheme, ThemeProvider } from "@mui/material";
 // Use the App.css file for MuiPaperLayout Component
 import "./App.css";
-import { MuiCustomizingTheme } from "./components/AdvanceTopic/MuiCustomizingTheme";
-import { colors, createTheme, ThemeProvider } from "@mui/material";
+import { MuiSignInPage } from "./components/AdvanceTopic/MuiSignInPage";
+// import { MuiCustomizingTheme } from "./components/AdvanceTopic/MuiCustomizingTheme";
 // import { MuiResponsiveness } from "./components/AdvanceTopic/MuiResponsiveness";
 // import { MuiMasonry } from "./components/ExperimentalComponents/MuiMasonry";
 // import { MuiTimeline } from "./components/ExperimentalComponents/MuiTimeline";
@@ -49,9 +50,9 @@ import { colors, createTheme, ThemeProvider } from "@mui/material";
 
 // Customizing the Theme
 const THEME = createTheme({
-  status: {
-    danger: "#e53e3e",
-  },
+  // status: {
+  //   danger: "#e53e3e",
+  // },
   palette: {
     secondary: {
       main: colors.orange[500],
@@ -105,7 +106,9 @@ const App = () => {
         {/* <MuiTimeline /> */}
         {/* <MuiMasonry/> */}
         {/* <MuiResponsiveness/> */}
-        <MuiCustomizingTheme />
+        {/* <MuiCustomizingTheme /> */}
+        <MuiSignInPage/>
+
       </ThemeProvider>
     </>
   );
